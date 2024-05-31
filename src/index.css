@@ -42,6 +42,7 @@ body {
 .input-group {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -52,6 +53,10 @@ body {
   font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.input-container {
+  width: calc(50% - 1.5rem);
 }
 
 #user-input input {
