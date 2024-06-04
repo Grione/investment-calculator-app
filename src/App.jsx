@@ -5,10 +5,10 @@ import Input from "./components/Input";
 import Table from "./components/Table";
 
 const INITIAL_STATE = {
-  initialInvestment: 1,
-  annualInvestment: 1,
-  expectedReturn: 1,
-  duration: 1
+  initialInvestment: 1000,
+  annualInvestment: 50,
+  expectedReturn: 6,
+  duration: 6
 }
 
 const LABELS = {
@@ -37,10 +37,10 @@ function App() {
       <Header />
       <div id="user-input">
         <div className="input-group">
-          <Input label={"initial investment"} onChange={onChangeValue} />
-          <Input label={"annual investment"} onChange={onChangeValue} />
-          <Input label={"expected return"} onChange={onChangeValue} />
-          <Input label={"duration"} onChange={onChangeValue} />
+          <Input label={LABELS.initialInvestment} defaultValue={values.initialInvestment} onChange={onChangeValue} />
+          <Input label={LABELS.annualInvestment} defaultValue={values.annualInvestment} onChange={onChangeValue} />
+          <Input label={LABELS.expectedReturn} defaultValue={values.expectedReturn} onChange={onChangeValue} />
+          <Input label={LABELS.duration} defaultValue={values.duration} onChange={onChangeValue} />
         </div>
       </div>
       <section>
