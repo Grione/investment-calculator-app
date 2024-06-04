@@ -32,6 +32,8 @@ function App() {
     })
   }
 
+  const valuesIsValid = values.duration >=1; 
+
   return (
     <>
       <Header />
@@ -44,7 +46,8 @@ function App() {
         </div>
       </div>
       <section>
-        <Table data={values} />
+        {!valuesIsValid && <p className="center">Please enter a duration greater then zero</p>}
+        {valuesIsValid &&  <Table data={values} />}
       </section>
     </>
 
