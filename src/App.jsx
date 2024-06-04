@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import Header from "./components/Header";
-import Input from "./components/Input";
-import Table from "./components/Table";
+import Header from "./components/header/Header";
+import Input from "./components/input/Input";
+import Table from "./components/table/Table";
 
 const INITIAL_STATE = {
   initialInvestment: 1000,

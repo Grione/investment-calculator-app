@@ -1,4 +1,5 @@
-import { calculateInvestmentResults, formatter } from '../util/investment';
+import { calculateInvestmentResults, formatter } from '../../util/investment';
+import styles from './Table.module.css';
 
 export default function Table({ data }) {
 
@@ -8,10 +9,8 @@ export default function Table({ data }) {
     result[0].interest -
     result[0].annualInvestment;
 
-  console.log(result)
-
   return (
-    <table id="result">
+    <table id={styles.result}>
       <thead>
         <tr>
           <th>Year</th>

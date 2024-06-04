@@ -1,8 +1,9 @@
-import logo from '../assets/investment-calculator-logo.png';
+import logo from '../../assets/investment-calculator-logo.png';
+import styles from './Header.module.css'
 
 export default function Header() {
   return (
-    <header id="header">
+    <header id={styles.header}>
       <img src={logo} alt="" />
       <h1>React Investment Calculator</h1>
     </header>
